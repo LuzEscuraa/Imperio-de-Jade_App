@@ -3,6 +3,9 @@ package Idjapp;
 import java.util.Random;
 import java.util.Scanner;
 
+
+//sistema gerador de encontros randomicos com limite de quantidade limitádo a 20 indivíduos com o nível deles variando
+//de acordo com o nivel de dificuldade informado
 public class Gerador_de_Encontros {
 	int dif;
 	int qnt;

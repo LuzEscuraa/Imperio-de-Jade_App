@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Idjapp{
 	public static void main(String[] args) {
+		
+		//Menu interativo que permite usuário escolher ação desejada
 		int choose;
 		do {
 		int esc;
@@ -33,11 +35,13 @@ public class Idjapp{
 				break;
 			}
 			}
+			//Resposta caso usuario digite opção inválida
 			if(esc!= 1 && esc != 2 && esc != 3 && esc != 4){
 				System.out.println("Opção não encontrada, tente novamente");
 				System.out.println(" ");
 			}
-		}while(esc!= 1 && esc != 2 && esc != 3 && esc != 4);
+		}//resposta aparece depois que a operação é concluída se o usuário deseja mais operações retorna ao menu, se não o sistema é encerrado
+		while(esc!= 1 && esc != 2 && esc != 3 && esc != 4);
 		System.out.println(" ");
 		System.out.println("Gostaria de algo mais ?"
 				+ "\n 1 sim"

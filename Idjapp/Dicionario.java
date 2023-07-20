@@ -4,10 +4,12 @@ import java.util.Scanner;
 
 public class Dicionario {
 	
-
+//dicionário que serve de sumário para locais importantes do universo de Tormenta o imperio de jade
 	public Dicionario(){
 		Scanner sc = new Scanner(System.in);
 		int choose;
+		//Estrutura de decisão com estrutura de repetição para menu interativo
+		//que se repete automaticamente se a resposta informada for inválida
 		do {
 			System.out.println("Selecione o termo que gostaria de buscar significado"
 					+ "\n 1 Shirokita"
