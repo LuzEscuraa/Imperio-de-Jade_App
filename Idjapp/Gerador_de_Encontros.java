@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 
-//sistema gerador de encontros randomicos com limite de quantidade limitádo a 20 indivíduos com o nível deles variando
+//sistema gerador de encontros randomicos com limite de quantidade limitï¿½do a 20 indivï¿½duos com o nï¿½vel deles variando
 //de acordo com o nivel de dificuldade informado
 public class Gerador_de_Encontros {
 	int dif;
@@ -16,8 +16,14 @@ public class Gerador_de_Encontros {
 		System.out.println("Insira escolha um valor entre 1 e vinte pra dificuldade");
 		dif = sc.nextInt();
 		qnt = rand.nextInt(20);
-		nv = dif/qnt;
-		System.out.println("Quantidade de inimigos = " + qnt + " de nível = " + nv);
+		nv = qnt/dif;
+		if(nv==0){
+			nv = nv+1;
+		}
+		if(qnt == 0) {
+			qnt = qnt +1;
+		}
+			System.out.println("Quantidade de inimigos = " + qnt + " de nï¿½vel = " + nv);
 
 	}
 }
